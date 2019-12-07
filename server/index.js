@@ -17,9 +17,16 @@ app
 		server.use(morgan('dev'));
 		server.use(helmet());
 
+		// server.get('/robots.txt', (req, res) => {
+		// 	res.send('hi')
+		// 	// res.status(200).sendFile('../public/robots.txt');
+		// });
+
 		server.get('*', (req, res) => {
 			return handle(req, res);
 		});
+
+		
 
 		server.listen(port, err => {
 			if (err) throw err;

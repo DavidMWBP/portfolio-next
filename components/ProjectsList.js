@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from '../components/Container';
-import Project from './project';
+import Project from '../components/Project';
 
 const ProjectsList = () => {
 	return (
