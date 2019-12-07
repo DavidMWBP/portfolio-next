@@ -7,7 +7,7 @@ const projects = [
 		name: 'Personal Portfolio',
 		previewImage: '/portfolio.png',
 		liveUrl: 'https://davidwolf.me/',
-		sourceUrl: 'https://github.com/DavidMWBP/portfolio',
+		sourceUrl: 'https://github.com/DavidMWBP/portfolio-next',
 		technologies: ['Javascript', 'NodeJS', 'React', 'Webpack', 'NextJS', 'Babel', 'HTML5', 'CSS3', 'Sass'],
 		overview: 'My own personal portfolio created in react.'
 	}
