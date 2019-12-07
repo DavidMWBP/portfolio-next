@@ -1,0 +1,14 @@
+// Variables
+$break-small: 320px;
+$break-medium: 768px;
+$break-large: 1200px;
+
+// Mixins
+@mixin vertical-align($left, $right) {
+    position: relative;
+    left: $left;
+    top: $right;
+    -webkit-transform: translate(-$left,-$right);
+    -ms-transform: translate(-$left,-$right);
+    transform: translate(-$left,-$right);
+}

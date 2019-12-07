@@ -1,0 +1,36 @@
+@import './main.scss';
+
+#portfolio__jumbotron {
+	background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('/portfolio-jumbotron.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	text-align: center;
+	margin: 0;
+	height: 100vh;
+}
+
+.portfolio__Languages__image {
+	padding: 20px 5px;
+	@media screen and (min-width: $break-medium) {
+		padding: 20px 30px;
+	}
+}
+
+#portfolio__jumbotron a {
+	color: #fff;
+}
+
+#portfolio__jumbotron__container {
+	@include vertical-align(50%, 30%);
+}
+
+#portfolio__jumbotron__socialmedia {
+	@include vertical-align(50%, 40%);
+}
+
+.portfolio__jumbotron__socialmedia__icon:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+}

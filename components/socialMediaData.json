@@ -1,0 +1,22 @@
+[
+	{
+		"title": "LinkedIn",
+		"href": "https://www.linkedin.com/in/david-wolf-8b957b13a/",
+		"faName": "fa fa-linkedin fa-2x"
+	},
+	{
+		"title": "GitHub",
+		"href": "https://github.com/DavidMWBP",
+		"faName": "fa fa-github fa-2x"
+	},
+	{
+		"title": "Email",
+		"href": "mailto:david.mwbp@gmail.com",
+		"faName": "fa fa-envelope-o fa-2x"
+	},
+	{
+		"title": "Resume",
+		"href": "/dwcv_nl.pdf",
+		"faName": "fa fa-user fa-2x"
+	}
+]
