@@ -1,4 +1,5 @@
 const withSass = require('@zeit/next-sass');
 module.exports = withSass({
-	sassLoaderOptions: {}
+	sassLoaderOptions: {},
+	poweredByHeader: false
 });

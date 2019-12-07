@@ -3,30 +3,24 @@ const morgan = require('morgan');
 const helmet = require('helmet');
 const next = require('next');
 
-// const dev = process.env.NODE_ENV || 'development';
-const app = next({});
+const dev = process.env.NODE_ENV !== 'production';
+const app = next({ dev });
+
+console.log(`Current environment: ${process.env.NODE_ENV}`);
 
 const handle = app.getRequestHandler();
-
 app
 	.prepare()
 	.then(() => {
 		const server = express();
-		const port = 5001;
+		const port = process.env.PORT || 5001;
 
 		server.use(morgan('dev'));
 		server.use(helmet());
 
-		// server.get('/robots.txt', (req, res) => {
-		// 	res.send('hi')
-		// 	// res.status(200).sendFile('../public/robots.txt');
-		// });
-
 		server.get('*', (req, res) => {
 			return handle(req, res);
 		});
-
-		
 
 		server.listen(port, err => {
 			if (err) throw err;
