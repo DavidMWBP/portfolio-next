@@ -14,6 +14,7 @@ class MyDocument extends Document {
 		return (
 			<Html lang="en">
 				<Head>
+					<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153207994-1"></script>
 					<meta name="viewport" content="width=device-width, initial-scale=1" />
 					<meta name="description" content="My Portfolio" />
 					<meta name="keywords" content="david, wolf, portfolio, projects, amsterdam, developer" />
