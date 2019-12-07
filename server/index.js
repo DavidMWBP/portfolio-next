@@ -3,7 +3,7 @@ const morgan = require('morgan');
 const helmet = require('helmet');
 const next = require('next');
 
-const dev = process.env.NODE_ENV !== 'production';
+// const dev = process.env.NODE_ENV || 'development';
 const app = next({});
 
 const handle = app.getRequestHandler();
@@ -23,7 +23,7 @@ app
 
 		server.listen(port, err => {
 			if (err) throw err;
-			console.log(`Server listening to port ${port}`);
+			console.log(`< listening on port ${port}`);
 		});
 	})
 	.catch(err => {

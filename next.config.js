@@ -1,5 +1,4 @@
-const withSass = require('@zeit/next-sass'); // Add this declaration
-// We modified the code earlier to add Sass
+const withSass = require('@zeit/next-sass');
 module.exports = withSass({
 	sassLoaderOptions: {}
 });

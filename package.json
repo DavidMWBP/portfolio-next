@@ -4,7 +4,8 @@
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
-		"prod": "npm run build && nodemon",
+		"prod": "npm run build && pm2 start",
+		"rebuild": "npm run build && pm2 restart Portfolio",
 		"build": "next build",
 		"start": "next start"
 	},
@@ -18,5 +19,8 @@
 		"react": "16.12.0",
 		"react-animate-on-scroll": "^2.1.5",
 		"react-dom": "16.12.0"
+	},
+	"devDependencies": {
+		"cross-env": "^6.0.3"
 	}
 }
