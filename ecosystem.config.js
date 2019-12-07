@@ -7,7 +7,7 @@ module.exports = {
 			exec_mode: 'cluster',
 			instances: 2,
 			autorestart: true,
-			watch: './server/*',
+			// watch: './server/*',
 			ignore_watch: ['node_modules'],
 			max_memory_restart: '300M'
 		}
