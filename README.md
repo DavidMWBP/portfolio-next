@@ -1,2 +1,2 @@
 # portfolio-next
-My personl portfolio created in React, NextJS
+My personal portfolio created in React, NextJS
